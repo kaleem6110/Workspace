@@ -1,0 +1,79 @@
+
+@font-face {
+    font-family: "WebSymbolsRegular";
+    font-style: normal;
+    font-weight: normal;
+    src: url("websymbols/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"), url("websymbols/websymbols-regular-webfont.woff") format("woff"), url("websymbols/websymbols-regular-webfont.ttf") format("truetype"), url("websymbols/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg");
+}
+.ca-menu {
+    float: left;
+    margin: 20px 80px;
+    padding: 0;
+    width: 500px;
+}
+.ca-menu li {
+    -moz-transition: all 300ms ease-in-out 0s;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-left: 10px solid #74AA50;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    display: block;
+    height: 100px;
+    margin-bottom: 4px;
+    overflow: hidden;
+    width: 500px;
+}
+.ca-menu li:last-child {
+    margin-bottom: 0;
+}
+.ca-menu li a {
+    color: #333333;
+    display: block;
+    height: 100%;
+    position: relative;
+    text-align: left;
+    width: 100%;
+}
+.ca-icon {
+    -moz-transition: all 300ms linear 0s;
+    font-family: 'WebSymbolsRegular',cursive;
+    font-size: 20px;
+    left: 20px;
+    line-height: 90px;
+    position: absolute;
+    text-align: center;
+    text-shadow: 0 0 1px #333333;
+    width: 90px;
+}
+.ca-content {
+    height: 60px;
+    left: 120px;
+    position: absolute;
+    top: 20px;
+    width: 370px;
+}
+.ca-main {
+    -moz-transition: all 300ms linear 0s;
+    font-size: 30px;
+}
+.ca-sub {
+    -moz-transition: all 300ms linear 0s;
+    color: #666666;
+    font-size: 14px;
+}
+.ca-menu li:hover {
+    background: none repeat scroll 0 0 #74AA50;
+    border-color: #74AA50;
+}
+.ca-menu li:hover .ca-icon {
+    color: white;
+    font-size: 50px;
+    text-shadow: 0 0 1px white;
+}
+.ca-menu li:hover .ca-main {
+    color: white;
+    font-size: 14px;
+}
+.ca-menu li:hover .ca-sub {
+    color: #FFFFFF;
+    font-size: 30px;
+}

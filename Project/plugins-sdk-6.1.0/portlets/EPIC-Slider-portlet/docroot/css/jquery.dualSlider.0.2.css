@@ -1,0 +1,275 @@
+/* CAROUSEL */
+
+.carousel{
+    margin:  0 0 25px 0;
+    position:relative;
+    height: 250px;
+    width: 580px;
+    overflow:hidden;    
+}
+
+.carousel h2{
+	color: #fff;
+}	
+
+
+.carousel .backgrounds{
+    height: 354px;
+}
+
+.carousel .backgrounds .item{
+    width: 580px;
+    height: 250px;
+    float:left;
+    position:relative;
+    z-index:1;
+}
+
+.carousel .backgrounds .item_1{
+    background: transparent url(../images/carousel_bg_arrow.jpg) no-repeat 0 0;
+}
+
+.carousel .backgrounds .item_2{
+    background: transparent url(../images/carousel_bg_arrow.jpg) no-repeat 0 0;
+}
+
+.carousel .backgrounds .item_3{
+    background: transparent url(../images/carousel_bg_1.jpg) no-repeat 0 0;
+}
+
+.carousel .backgrounds .item_4{
+    background: transparent url(../images/carousel_bg_2.jpg) no-repeat 0 0;
+}
+
+.carousel .backgrounds .item_5{
+    background: transparent url(../images/carousel_bg_3.jpg) no-repeat 0 0;
+}
+
+.carousel .backgrounds .item_6{
+    background: transparent url(../images/carousel_bg_1.jpg) no-repeat 0 0;
+}
+
+.carousel .panel{
+    background: #74AA50;
+    color: #FFFFFF;
+    position:absolute;
+    right: 0;
+    top:0;
+    height: 250px;
+    width: 250px;
+    z-index:10;
+}
+
+.carousel .panel .paging{
+    position:absolute;
+    bottom: 25px;
+    left:15px;
+    width: 175px;    
+    text-align:center;   
+}
+
+.carousel .panel .paging a{
+    color: #4c4c4c;
+    font-size: 1.1em;
+}
+
+.carousel .panel .pause{
+    position:absolute;
+    right:20px;
+    top:25px;
+    display:block;
+    width: 18px;
+    height: 18px;
+    background: transparent url(../images/carousel_pause_bg.gif) no-repeat 0 0;
+    text-indent: -6000px;
+}
+
+.carousel .panel .play{
+    position:absolute;
+    right:20px;
+    top:25px;
+    display:block;
+    width: 18px;
+    height: 18px;
+    background: transparent url(../images/carousel_play_bg.gif) no-repeat 0 0;
+    text-indent: -6000px;
+}
+
+
+.carousel .panel .paging .next{
+    position:absolute;
+    right:0;
+    bottom:0;
+    display:block;
+    width: 18px;
+    height: 18px;
+    background: transparent url(../images/carousel_next_bg.gif) no-repeat 0 0;
+    text-indent: -6000px;
+}
+
+.carousel .panel .paging .previous{
+    position:absolute;
+    left:0;
+    bottom:0;
+    display:block;
+    width: 18px;
+    height: 18px;
+    background: transparent url(../images/carousel_previous_bg.gif) no-repeat 0 0;
+    text-indent: -6000px;
+}
+
+.carousel .panel .paging #numbers a {
+    padding: 0 5px 0 5px;
+}
+
+.carousel .panel .paging #numbers a.selected {
+    color: #fff;
+}
+
+
+
+.carousel .panel .details_wrapper {
+    position:absolute;
+    top:20px;
+    left:25px;
+    width: 225px;
+    overflow:hidden;
+    height: 200px;
+}
+
+.carousel .panel .details_wrapper .details{
+    height: 200px;
+}
+
+.carousel .panel .details_wrapper .details .detail{
+    width: 225px;
+    height: 200px;
+    float:left;
+    
+}
+
+.carousel .panel .details_wrapper .details h2{
+    font-size: 1.4em;
+    line-height: 1.2em;
+    margin: 0 0 15px 0;
+}
+
+.carousel .panel .details_wrapper .details a.more{
+    color: #fff;
+    font-size:1.1em;
+}   
+
+/* END CAROUSEL */
+/* Style.css */
+.wrappers a, .wrappers a:visited {
+    color:#FFFFFF;
+    text-decoration:none;
+}
+.wrappers a:hover {
+    text-decoration:underline;
+}
+
+.wrappers strong {
+    font-weight:bold;
+}
+
+.wrappers p, .wrappers blockquote{
+    margin: 0 0 15px 0;
+}
+
+.wrappers {
+	
+	font-size: 1.2em;
+	/*width: 580px;*/
+	width:auto;
+	margin: auto;
+	text-align:left
+}
+
+.wrappers h1 {
+	font-size: 4.0em;
+	color: #000;
+	margin: 50px 0 0 0;
+}
+
+.detail h2 {
+	font-size: 1.2em;
+	color: #000;
+	margin: 0 0 25px 0;
+}
+
+.wrappers h3{
+	font-size: 1.4em;
+	color: #000;
+	margin: 0 0 5px 0;
+}
+
+.wrappers .columns {
+	margin: 0 0 15px 0;
+	
+	border-bottom:1px solid #ccc;
+	background: transparent url(../images/columns_bg.png) no-repeat 100% 100%;
+	border-top:1px solid #ccc;
+	padding: 15px 0 10px 0;
+}
+
+.wrappers .columns .col{
+	float:left;
+	width: 210px;
+	margin: 0 0 0 10px;
+	
+}
+
+.wrappers .download , a:visited.download {
+	float:right;
+	display:block;
+	background: #000 url(../images/carousel_download_bg.gif) no-repeat 9px 0.8em;
+	padding: 10px 10px 10px 35px;
+	font-size: 1.1em;
+	color: #fff;
+	margin: 20px 20px 0 0;
+	border:6px solid #eee;
+}
+.wrappers a:hover.download {
+	border-color: #ccc;
+}
+
+.wrappers .download em{
+	display:block;
+	font-size: 0.9em;
+}
+
+/* END OF STYLE.CSS */
+
+/* STAR OF CLEARFIX.CSS */
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+/*END CLEARFIX.css */
+/***Inline****/
+
+
+
+
+
+
+
+
+
+
+
+
+
+

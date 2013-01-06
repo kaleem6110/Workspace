@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+#parse ($init)
+
+<html class="#language("lang.dir")" dir="#language("lang.dir")" lang="$w3c_language_id">
+
+<head>
+	<title>$the_title - $company_name</title>
+
+	$theme.include($top_head_include)
+
+	<script type="text/javascript" src="/html/themes/classic/js/jquery-1.7.1.min.js"></script>
+
+	<script type="text/javascript">var switchTo5x=true;</script>
+	<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+	<script type="text/javascript">stLight.options({publisher: "ur-91ce6313-a45b-fb2d-4a2d-b51d583b223d"});</script>
+	
+</head>
+
+<body class="$css_class">
+
+$theme.include($body_top_include)
+
+#if ($is_signed_in)
+	#dockbar()
+#end
+
+<div id="wrapper">
+	<a href="#main-content" id="skip-to-content">#language("skip-to-content")</a>
+
+	<header id="banner" role="banner">
+		<div id="heading">
+			<h1 class="site-title">
+				<a class="$logo_css_class" href="$site_default_url" title="#language("go-to") $site_name">
+					<img alt="$logo_description" height="$site_logo_height" src="$site_logo" width="$site_logo_width" />
+				</a>
+
+				#if ($show_site_name)
+					<span class="site-name" title="#language("go-to") $site_name">
+						$site_name
+					</span>
+				#end
+			</h1>
+
+			<h2 class="page-title">
+				<span>$the_title</span>
+			</h2>
+		</div>
+
+		#if (!$is_signed_in)
+			<a href="$sign_in_url" id="sign-in" rel="nofollow">$sign_in_text</a>
+		#end
+
+		#if ($has_navigation || $is_signed_in)
+			#parse ("$full_templates_path/navigation.vm")
+		#end
+	</header>
+
+	<div id="content">
+		<nav class="site-breadcrumbs" id="breadcrumbs">
+			<h1>
+				<span>#language("breadcrumbs")</span>
+			</h1>
+
+			#breadcrumbs()
+		</nav>
+
+		#if ($selectable)
+			$theme.include($content_include)
+		#else
+			$portletDisplay.recycle()
+
+			$portletDisplay.setTitle($the_title)
+
+			$theme.wrapPortlet("portlet.vm", $content_include)
+		#end
+	</div>
+
+	<footer id="footer" role="contentinfo">
+
+
+
+
+	<div id="fbodyy" style="margin:auto;width:90%;">
+<div  style="border:1px solid #74AA50;text-align:left;color:white;font-weight:normal;font-family:Arial;font-size:14px;height:130px;margin:auto;width:100%;">
+<table style="width:100%;padding-top:10px;">
+	<tr>	
+		<td style="width:20%;padding-left:50px;">
+
+				<ul class="footerlist" >
+					<li><a href="/web/apps/home"> EPIC </a></li>
+					<li><a href="/web/apps/about-us"> About Us </a></li>
+					<li><a href="/web/apps/projects"> Projects </a></li>
+					<li><a href="/web/apps/news"> News </a></li>
+					<li><a href="/web/apps/contact-us"> Contact Us </a></li>
+				</ul>
+		 </td>
+
+
+		<td  style="width:20%">
+		
+				<ul class="footerlist">
+					<li><a href="/web/apps/epic-portal"> EPIC Portal </a></li>
+					<li><a href="/web/apps/epic-apps"> EPIC Apps</a></li>
+					<li><a href="/web/apps/epic-unified-communications"> EPIC UC</a></li>
+					<li><a href="/web/apps/epic-interact"> EPIC Interact</a></li>
+					<li><a href="/web/apps/epic-situation-room"> EPIC Situation Room</a></li>
+				</ul>
+		</td>
+
+
+		<td  style="width:20%">
+		
+				<ul class="footerlist">
+					<li><a href="/web/apps/partners"> Partners </a></li>
+					<li><a href="/web/apps/guiding-principles"> Guiding principles</a></li>
+					<li><a href="/web/apps/governance"> Governance</a></li>
+					<li><a href="/web/apps/sustainability"> Sustainability</a></li>
+					<li><a href="/web/apps/site-map"> Sitemap</a></li>
+				</ul>
+		
+		</td>
+
+
+
+		<td  style="width:38%;"><img align="right" src="/html/themes/classic/images/WFP_Long_White.gif"  height="100px" alt="WFP Logo"></img> </td>
+
+
+         </tr>
+</table>
+</div>
+<div style="width:100%;margin:auto;height:30px;padding-top:10px;border:1px solid white;text-align:center;color:white">
+<a class="footerrBar" href="/web/apps/privacy-policy"  > Privacy Policy</a> &nbsp; | &nbsp; <a class="footerrBar" href="/web/apps/terms-conditions" >Terms and Conditions</a> &nbsp; | &nbsp;  2012 Copyright - EPIC
+</div>
+</div>
+
+		
+	</footer>
+</div>
+
+$theme.include($body_bottom_include)
+
+</body>
+
+$theme.include($bottom_include)
+
+</html>
